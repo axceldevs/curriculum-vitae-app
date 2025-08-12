@@ -1,0 +1,14 @@
+.home-layout {
+  display: flex;
+  height: 100vh; /* Toda la altura de la pantalla */
+}
+
+app-header {
+  width: 250px; /* Ancho fijo del header */
+  background-color: #f0f0f0;
+}
+
+.home-content {
+  flex: 1; /* Ocupa todo el espacio restante */
+  padding: 20px;
+}

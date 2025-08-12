@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+  --color-primary: #0d6efd;    /* azul primario */
+  --color-secondary: #6c757d;  /* gris secundario */
+  --color-bg-sidebar: #2c3e50; /* fondo sidebar */
+  --color-text-primary: #ffffff; /* texto blanco */
+}
+
+img{
+  width: 100%;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: var(--color-text-primary);
+}

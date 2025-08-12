@@ -1,0 +1,57 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+}
+
+.menu-item {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: var(--color-secondary);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  overflow: visible;
+  cursor: pointer;
+  transition: width 0.3s ease;
+}
+
+.menu-item img {
+  width: 24px;
+  height: 24px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  object-fit: contain;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.menu-item .text {
+  position: absolute;
+  left: 60px;
+  white-space: nowrap;
+  opacity: 0;
+  color: black;
+  font-weight: 500;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+  user-select: none;
+}
+
+.menu-item:hover {
+  width: auto;                   
+  border-radius: 25px;       
+  background-color: var(--color-primary);
+}
+
+.menu-item:hover .text {
+  opacity: 1;
+  pointer-events: auto;
+}
