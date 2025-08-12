@@ -1,14 +1,84 @@
-.home-layout {
+.layout__content {
   display: flex;
-  height: 100vh; /* Toda la altura de la pantalla */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-md, 5px);
+  text-align: center;
+  color: var(--color-text-primary, #212529);
+  gap: 1rem;
 }
 
-app-header {
-  width: 250px; /* Ancho fijo del header */
-  background-color: #f0f0f0;
+.layout__content h1 {
+  margin: 0;
+  white-space: nowrap;
+  line-height: 1.2;
+  font-size: 2.5rem;
 }
 
-.home-content {
-  flex: 1; /* Ocupa todo el espacio restante */
-  padding: 20px;
+.layout__content p {
+  margin: 0;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  color: var(--color-text-light, #6c757d);
+}
+
+.typed-cursor {
+  font-weight: 100;
+  color: var(--color-primary, #0d6efd);
+  animation: blink 0.7s infinite;
+  margin-left: 0.1em;
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+.social-links {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.social-link {
+  color: var(--color-text-light, #6c757d);
+  font-size: 2.5rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  user-select: none;
+}
+
+.social-link:hover,
+.social-link:focus {
+  color: var(--color-primary, #0d6efd);
+  transform: scale(1.2);
+  outline: none;
+  cursor: pointer;
+}
+
+/* Colores específicos para cada red (opcional) */
+.social-link.whatsapp:hover {
+  color: #25D366;
+}
+
+.social-link.instagram:hover {
+  color: #E4405F;
+}
+
+.social-link.github:hover {
+  color: var(--color-primary);
+}
+
+.social-link.linkedin:hover {
+  color: #0077B5;
 }

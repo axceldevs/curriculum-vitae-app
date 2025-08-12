@@ -14,7 +14,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: var(--color-bg);
   text-decoration: none;
   overflow: visible;
   cursor: pointer;
@@ -27,7 +27,7 @@ nav {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  color: white;
+  color: var(--color-bg);
   object-fit: contain;
   border-radius: 50%;
   flex-shrink: 0;
@@ -38,7 +38,7 @@ nav {
   left: 60px;
   white-space: nowrap;
   opacity: 0;
-  color: black;
+  color: var(--color-text-light);
   font-weight: 500;
   transition: opacity 0.3s ease;
   pointer-events: none;

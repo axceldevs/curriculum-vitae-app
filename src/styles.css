@@ -1,21 +1,88 @@
+/* =========================================================
+   🎨 Variables globales
+   ========================================================= */
+:root {
+  /* Paleta principal */
+  --color-primary: #0d6efd;       /* Azul primario */
+  --color-primary-dark: #0b5ed7;  /* Azul más oscuro */
+  --color-secondary: #6c757d;     /* Gris secundario */
+  --color-accent: #ffc107;        /* Amarillo acento */
+
+  /* Fondo */
+  --color-bg: #f8f9fa;            /* Blanco suave */
+  --color-bg-sidebar: #2c3e50;    /* Sidebar oscuro */
+
+  /* Texto */
+  --color-text-primary: #212529;  /* Gris oscuro */
+  --color-text-secondary: #495057;
+  --color-text-light: #ffffff;
+
+  /* Bordes y sombras */
+  --color-border: #dee2e6;
+  --shadow-soft: 0 2px 8px rgba(0, 0, 0, 0.05);
+
+  /* Tipografía */
+  --font-family-base: 'Inter', 'Segoe UI', Roboto, sans-serif;
+  --font-size-base: 16px;
+  --font-size-sm: 14px;
+  --font-size-lg: 18px;
+
+  /* Espaciado */
+  --space-xs: 4px;
+  --space-sm: 8px;
+  --space-md: 16px;
+  --space-lg: 24px;
+  --space-xl: 40px;
+
+  /* Bordes */
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-:root {
-  --color-primary: #0d6efd;    /* azul primario */
-  --color-secondary: #6c757d;  /* gris secundario */
-  --color-bg-sidebar: #2c3e50; /* fondo sidebar */
-  --color-text-primary: #ffffff; /* texto blanco */
-}
-
 img{
   width: 100%;
 }
 
+html {
+  font-size: var(--font-size-base);
+}
+
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  background-color: var(--color-text-primary);
+  font-family: var(--font-family-base);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  color: var(--color-text-light);
+  line-height: 1.2;
+  margin-bottom: var(--space-md);
+}
+
+p {
+  margin-bottom: var(--space-md);
+  color: var(--color-text-light);
+}
+
+/* =========================================================
+   🌐 Links
+   ========================================================= */
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
