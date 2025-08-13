@@ -1,23 +1,9 @@
 /* Fondo principal */
 .layout {
   min-height: 100vh;
-  background: url('../assets/imgs/bg.jpg') center center / cover no-repeat fixed;
   position: relative;
   color: var(--color-text-light, #fff);
   overflow-x: hidden;
-}
-
-/* Overlay oscuro para mejorar contraste */
-.layout::before {
-  content: "";
-  position: fixed; /* fijo para cubrir toda la pantalla */
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.4); /* negro con 40% de opacidad */
-  pointer-events: none; /* que no bloquee clicks */
-  z-index: 0;
 }
 
 /* Sidebar */
@@ -29,7 +15,6 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  background-color: transparent;
   color: var(--color-text-light);
   padding: var(--space-lg);
   width: 100px;

@@ -45,6 +45,16 @@ nav {
   user-select: none;
 }
 
+.menu-item.active {
+  background-color: #007bff; /* Azul */
+  color: var(--color-text-light);
+  border-radius: 25px;
+}
+
+.menu-item.active img {
+  filter: brightness(0) invert(1); /* icono blanco */
+}
+
 .menu-item:hover {
   width: auto;                   
   border-radius: 25px;       

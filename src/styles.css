@@ -58,9 +58,39 @@ html {
 body {
   font-family: var(--font-family-base);
   color: var(--color-text-primary);
-  background-color: var(--color-bg);
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+}
+
+body.page-page-home {
+  background: url('./assets/imgs/bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+body.page-page-home .layout::before {
+  content: "";
+  position: fixed; /* fijo para cubrir toda la pantalla */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.4); /* negro con 40% de opacidad */
+  pointer-events: none; /* que no bloquee clicks */
+  z-index: 0;
+}
+
+body:not(.page-page-home) .layout::before {
+  content: "";
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(245, 245, 245, 0.85); /* gris muy claro con transparencia */
+  pointer-events: none;
+  z-index: 0;
+  backdrop-filter: saturate(180%) blur(6px); /* efecto sutil de difuminado */
+}
+
+body:not(.page-page-home) .menu-item:hover .text {     
+  color: var(--color-text-primary);
 }
 
 h1, h2, h3, h4, h5, h6 {
